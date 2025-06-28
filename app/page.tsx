@@ -1248,7 +1248,7 @@ const Dashboard = () => {
                     <span className="text-2xl">📈</span>
                     <span>
                       Intégrer des visualisations dynamiques supplémentaires, comme des cartes géologiques 3D ou des
-                      graphiques interactifs, pour faciliter l’interprétation des résultats par les non-experts.
+                      graphiques interactifs,
                     </span>
                   </div>
                   <div className="flex items-start gap-2">
@@ -1308,6 +1308,18 @@ const Dashboard = () => {
                   <span>📄</span> Rapport
                 </a>
               </div>
+            </div>
+            {/* Streamlit Access Button */}
+            <div className="px-4 py-2">
+              <a
+                href="https://prediction-dnzyblcubfgrktmer4bzau.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-medium shadow hover:from-cyan-500 hover:to-blue-600 transition-all duration-300 mb-2"
+              >
+                <BeakerIcon className="h-5 w-5" />
+                <span>Accéder à Streamlit</span>
+              </a>
             </div>
             {/* Navigation */}
             {navigationItems.map((item) => {
